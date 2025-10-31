@@ -9,7 +9,7 @@
 [![Node](https://img.shields.io/badge/Node-18+-green.svg?logo=node.js)](https://nodejs.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/vKAYFv/proxy-scraper-pro)
 
-*Harvest fresh SOCKS5 proxies from 50+ sources with a stunning neon-glass interface*
+*Harvest fresh SOCKS5 proxies from 30+ sources with a stunning neon-glass interface*
 
 ![Proxy Scraper Pro UI](docs/screenshot.png)
 
@@ -26,7 +26,7 @@
 <td width="50%">
 
 ### 🚀 **Performance**
-- **Mass Collection Engine** – Concurrent scraping from 50+ curated sources
+- **Mass Collection Engine** – Concurrent scraping from 30+ curated sources
 - **Intelligent Deduplication** – Real-time in-memory filtering
 - **Geonode API Integration** – Premium proxy feed support
 - **Multi-threaded Architecture** – Optimized for speed
@@ -68,7 +68,7 @@
 
 | Feature | Proxy Scraper Pro | Traditional Scrapers |
 |---------|-------------------|---------------------|
-| **Concurrent Sources** | 50+ simultaneous | 5-10 sequential |
+| **Concurrent Sources** | 30+ simultaneous | 5-10 sequential |
 | **UI/UX** | Modern glassmorphic | Basic terminal/GUI |
 | **Auto-Refresh** | ✅ Built-in | ❌ Manual only |
 | **Deduplication** | ✅ Real-time | ⚠️ Post-processing |
