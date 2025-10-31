@@ -12,9 +12,7 @@ The app fans out across dozens of curated sources, deduplicates results in-memor
 - **Auto refresh cadence** – optional background job to rerun the scrape every 30 minutes.
 - **Installer-ready build** – packaged via `electron-builder` for signed Windows installers.
 
-> _Tip:_ Drop your own UI screenshot into `docs/screenshot.png` and uncomment the image reference below.
-
-<!-- ![Proxy Scraper Pro UI](docs/screenshot.png) -->
+ ![Proxy Scraper Pro UI](docs/screenshot.png)
 
 ## 🚀 Getting Started
 
