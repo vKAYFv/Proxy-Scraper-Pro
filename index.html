@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy Scraper Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-body">
+  <div class="app-wrapper">
+    <div id="titlebar" class="titlebar draggable select-none">
+      <h1 class="cursor-move">Proxy Scraper Pro</h1>
+      <div class="window-controls non-draggable">
+        <button id="minBtn" class="window-btn" onclick="window.electronAPI.minimize()">&minus;</button>
+        <button id="maxBtn" class="window-btn" onclick="window.electronAPI.maximize()">&#9633;</button>
+        <button id="closeBtn" class="window-btn danger" onclick="window.electronAPI.close()">&#10005;</button>
+      </div>
+    </div>
+
+    <div class="glass-panel compressed non-draggable animate-fade-in">
+      <div class="panel-header">
+        <div class="main-actions">
+          <span class="pill-label">Socks5</span>
+          <button id="scrapeBtn" class="primary-btn">Grab Proxies</button>
+          <span id="proxyCount" class="pill-label hidden">0 proxies loaded</span>
+        </div>
+        <div class="secondary-actions">
+          <button id="exportBtn" class="ghost-btn" disabled>Export List</button>
+          <button id="refreshToggle" class="toggle-btn">Auto Refresh Off</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="progress" class="glass-panel animate-fade-in hidden non-draggable">
+      <div class="progress-meta">
+        <span>Harvesting global endpoints...</span>
+        <span id="progressText">0/40 items</span>
+      </div>
+      <div class="progress-track">
+        <div id="progressBar" style="width: 0%"></div>
+      </div>
+      <div id="progressAdded">Unique: 0</div>
+    </div>
+
+    <div id="statsView" class="glass-panel animate-fade-in non-draggable">
+      <div class="badge">Status</div>
+      <h3>Scraping Insights</h3>
+      <div id="statsText">Ready to sweep the net.</div>
+    </div>
+
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "proxy-scraper-app",
+  "version": "1.2.0",
+  "description": "SOCKS5 Proxy Scraper Desktop App",
+  "author": "KAYF DevStudio",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.example.proxy-scraper",
+    "productName": "Proxy Scraper Pro",
+    "directories": { "output": "dist" },
+    "files": [
+      "**/*",
+      "!dist{,/**/*}"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icons/app-icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icons/app-icon.ico",
+      "uninstallerIcon": "icons/app-icon.ico",
+      "installerHeaderIcon": "icons/app-icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Proxy Scraper Pro"
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
